@@ -1,20 +1,9 @@
 <?php
-    #require_once('../Classes/Fibonacci.class.php');
-
-    $n = 15;
-    $a = 0;
+    require_once('../Classes/Fibonacci.class.php');
     $b = 1;
-    $aux = 0;
 
+    $fibo = new Fibonacci();
     echo "{$b}";
-
-    for($i = 1; $i < $n; $i++){
-        $aux = $a + $b;
-        $a = $b;
-        $b = $aux;
-
-        echo " - {$aux}";
-    }
-
+    $fibo->armazenarSequencia(20);
 ?>
 
